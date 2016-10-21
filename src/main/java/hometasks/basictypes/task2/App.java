@@ -58,124 +58,96 @@ public class App {
         return choise;
     }
 
+    private static int getUserChoicePositiveValue() {
+        int choise;
+
+        while (true) {
+            choise = getUserChoice();
+            if (choise <= 0) {
+                System.out.println("Введенное значение должно быть больше 0");
+                System.out.println("Повторите ввод данных.");
+                continue;
+            }
+            break;
+        }
+
+        return choise;
+    }
+
     private static void calculateData(int choice) {
         switch (choice) {
             case 1:
-                showResult(menuItem1, calculateCircleLenght());
+                showResult(menuItem1, getCircleData().getLenght());
                 break;
             case 2:
-                showResult(menuItem2, calculateCircleSquare());
+                showResult(menuItem2, getCircleData().getSquare());
                 break;
             case 3:
-                showResult(menuItem3, calculateAnnulusSquare());
+                showResult(menuItem3, getAnnulusData().getSquare());
                 break;
             case 4:
-                showResult(menuItem4, calculateTrianglePerimeter());
+                showResult(menuItem4, getTriangleData().getPerimeter());
                 break;
             case 5:
-                showResult(menuItem5, calculateTriangleSquare());
+                showResult(menuItem5, getTriangleData().getSquare());
                 break;
             case 6:
-                showResult(menuItem6, calculateRectanglePerimeter());
+                showResult(menuItem6, getRectangleData().getPerimeter());
                 break;
             case 7:
-                showResult(menuItem7, calculateRectangleSquare());
+                showResult(menuItem7, getRectangleData().getSquare());
                 break;
             default:
                 exit = true;
         }
     }
 
-    private static double calculateRectangleSquare() {
-        Rectangle rectangle = getRectangleData();
-        return rectangle.getSquare();
-    }
-
-    private static double calculateRectanglePerimeter() {
-        Rectangle rectangle = getRectangleData();
-        return rectangle.getPerimeter();
-    }
-
-    private static double calculateTriangleSquare() {
-        Triangle triangle = getTriangleData();
-        return triangle.getSquare();
-    }
-
-    private static double calculateTrianglePerimeter() {
-        Triangle triangle = getTriangleData();
-        return triangle.getPerimeter();
-    }
-
-    private static double calculateAnnulusSquare() {
-        Annulus annulus = getAnnulusData();
-        return annulus.getSquare();
-    }
-
-    private static double calculateCircleSquare() {
-        Circle circle = getCircleData();
-        return circle.getSquare();
-    }
-
-    private static double calculateCircleLenght() {
-        Circle circle = getCircleData();
-        return circle.getLenght();
-    }
-
     private static Circle getCircleData() {
         System.out.println("Введите радиус \'R\'");
-        Circle circle = new Circle(getUserChoice());
-
-        return circle;
+        return new Circle(getUserChoicePositiveValue());
     }
 
     private static Annulus getAnnulusData() {
         int R;
         int r;
 
-        do {
+        while (true) {
             System.out.println("Введите внешний радиус \'R\'");
-            R = getUserChoice();
+            R = getUserChoicePositiveValue();
             System.out.println("Введите внутренний радиус \'r\'");
-            r = getUserChoice();
+            r = getUserChoicePositiveValue();
 
             if (R > r)
                 break;
 
             System.out.println("Внешний радиус \'R\' должен быть больше внутреннего радиуса \'r\'.");
             System.out.println("Повторите ввод данных.");
+        }
 
-        } while (true);
-
-        Annulus annulus = new Annulus(R, r);
-
-        return annulus;
+        return new Annulus(R, r);
     }
 
     private static Triangle getTriangleData() {
         System.out.println("Введите сторону \'a\'");
-        int a = getUserChoice();
+        int a = getUserChoicePositiveValue();
 
         System.out.println("Введите сторону \'b\'");
-        int b = getUserChoice();
+        int b = getUserChoicePositiveValue();
 
         System.out.println("Введите сторону \'c\'");
-        int c = getUserChoice();
+        int c = getUserChoicePositiveValue();
 
-        Triangle triangle = new Triangle(a, b, c);
-
-        return triangle;
+        return new Triangle(a, b, c);
     }
 
     private static Rectangle getRectangleData() {
         System.out.println("Введите сторону \'a\'");
-        int a = getUserChoice();
+        int a = getUserChoicePositiveValue();
 
         System.out.println("Введите сторону \'b\'");
-        int b = getUserChoice();
+        int b = getUserChoicePositiveValue();
 
-        Rectangle rectangle = new Rectangle(a, b);
-
-        return rectangle;
+        return new Rectangle(a, b);
     }
 
     private static void showResult(String message, double result) {
