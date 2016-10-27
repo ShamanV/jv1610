@@ -28,31 +28,31 @@ public class App {
     private static void printData3(int k) {
         switch (k) {
             case 1:
-                System.out.println("один");
+                System.out.println("РѕРґРёРЅ");
                 break;
             case 2:
-                System.out.println("два");
+                System.out.println("РґРІР°");
                 break;
             case 3:
-                System.out.println("три");
+                System.out.println("С‚СЂРё");
                 break;
             case 4:
-                System.out.println("четыре");
+                System.out.println("С‡РµС‚С‹СЂРµ");
                 break;
             case 5:
-                System.out.println("пять");
+                System.out.println("РїСЏС‚СЊ");
                 break;
             case 6:
-                System.out.println("шесть");
+                System.out.println("С€РµСЃС‚СЊ");
                 break;
             case 7:
-                System.out.println("семь");
+                System.out.println("СЃРµРјСЊ");
                 break;
             case 8:
-                System.out.println("восемь");
+                System.out.println("РІРѕСЃРµРјСЊ");
                 break;
             case 9:
-                System.out.println("девять");
+                System.out.println("РґРµРІСЏС‚СЊ");
                 break;
             default:
                 System.out.println();
@@ -62,28 +62,28 @@ public class App {
     private static void printData2(int y) {
         switch (y) {
             case 2:
-                System.out.print("двадцать");
+                System.out.print("РґРІР°РґС†Р°С‚СЊ");
                 break;
             case 3:
-                System.out.print("тридцать");
+                System.out.print("С‚СЂРёРґС†Р°С‚СЊ");
                 break;
             case 4:
-                System.out.print("сорок");
+                System.out.print("СЃРѕСЂРѕРє");
                 break;
             case 5:
-                System.out.print("пятьдесят");
+                System.out.print("РїСЏС‚СЊРґРµСЃСЏС‚");
                 break;
             case 6:
-                System.out.print("шестьдесят");
+                System.out.print("С€РµСЃС‚СЊРґРµСЃСЏС‚");
                 break;
             case 7:
-                System.out.print("семьдесят");
+                System.out.print("СЃРµРјСЊРґРµСЃСЏС‚");
                 break;
             case 8:
-                System.out.print("восемьдесят");
+                System.out.print("РІРѕСЃРµРјСЊРґРµСЃСЏС‚");
                 break;
             case 9:
-                System.out.print("девяносто");
+                System.out.print("РґРµРІСЏРЅРѕСЃС‚Рѕ");
                 break;
         }
     }
@@ -91,37 +91,37 @@ public class App {
     private static void printData1(int i) {
         switch (i) {
             case 0:
-                System.out.println("ноль");
+                System.out.println("РЅРѕР»СЊ");
                 break;
             case 10:
-                System.out.println("десять");
+                System.out.println("РґРµСЃСЏС‚СЊ");
                 break;
             case 11:
-                System.out.println("одиннадцать");
+                System.out.println("РѕРґРёРЅРЅР°РґС†Р°С‚СЊ");
                 break;
             case 12:
-                System.out.println("двенадцать");
+                System.out.println("РґРІРµРЅР°РґС†Р°С‚СЊ");
                 break;
             case 13:
-                System.out.println("тринадцать");
+                System.out.println("С‚СЂРёРЅР°РґС†Р°С‚СЊ");
                 break;
             case 14:
-                System.out.println("четырнадцать");
+                System.out.println("С‡РµС‚С‹СЂРЅР°РґС†Р°С‚СЊ");
                 break;
             case 15:
-                System.out.println("пятнадцать");
+                System.out.println("РїСЏС‚РЅР°РґС†Р°С‚СЊ");
                 break;
             case 16:
-                System.out.println("шестнадцать");
+                System.out.println("С€РµСЃС‚РЅР°РґС†Р°С‚СЊ");
                 break;
             case 17:
-                System.out.println("семнадцать");
+                System.out.println("СЃРµРјРЅР°РґС†Р°С‚СЊ");
                 break;
             case 18:
-                System.out.println("восемнадцать");
+                System.out.println("РІРѕСЃРµРјРЅР°РґС†Р°С‚СЊ");
                 break;
             case 19:
-                System.out.println("девятнадцать");
+                System.out.println("РґРµРІСЏС‚РЅР°РґС†Р°С‚СЊ");
                 break;
         }
     }

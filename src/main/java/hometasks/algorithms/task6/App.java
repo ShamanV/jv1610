@@ -15,11 +15,11 @@ public class App {
         }
 
         System.out.println();
-        System.out.println("Отражение массива по горизонтали:");
+        System.out.println("РћС‚СЂР°Р¶РµРЅРёРµ РјР°СЃСЃРёРІР° РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё:");
         printArrayFlipHor(array);
-        System.out.println("Отражение массива по вертикали:");
+        System.out.println("РћС‚СЂР°Р¶РµРЅРёРµ РјР°СЃСЃРёРІР° РїРѕ РІРµСЂС‚РёРєР°Р»Рё:");
         printArrayFlipVert(array);
-        System.out.println("Отражение массива по горизонтали и вертикали:");
+        System.out.println("РћС‚СЂР°Р¶РµРЅРёРµ РјР°СЃСЃРёРІР° РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё Рё РІРµСЂС‚РёРєР°Р»Рё:");
         printArrayFlipHorVert(array);
 
     }

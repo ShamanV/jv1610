@@ -7,13 +7,13 @@ import java.util.Scanner;
  */
 public class App {
     private static boolean exit;
-    private static final String menuItem1 = "Длина окружности";
-    private static final String menuItem2 = "Площадь окружности";
-    private static final String menuItem3 = "Площадь кольца";
-    private static final String menuItem4 = "Периметр треугольника";
-    private static final String menuItem5 = "Площадь треугольника";
-    private static final String menuItem6 = "Периметр прямоугольника";
-    private static final String menuItem7 = "Площадь прямоугольника";
+    private static final String menuItem1 = "Р”Р»РёРЅР° РѕРєСЂСѓР¶РЅРѕСЃС‚Рё";
+    private static final String menuItem2 = "РџР»РѕС‰Р°РґСЊ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё";
+    private static final String menuItem3 = "РџР»РѕС‰Р°РґСЊ РєРѕР»СЊС†Р°";
+    private static final String menuItem4 = "РџРµСЂРёРјРµС‚СЂ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°";
+    private static final String menuItem5 = "РџР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°";
+    private static final String menuItem6 = "РџРµСЂРёРјРµС‚СЂ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°";
+    private static final String menuItem7 = "РџР»РѕС‰Р°РґСЊ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°";
 
     public static void main(String[] args) {
         programm();
@@ -29,7 +29,7 @@ public class App {
     }
 
     private static void showMenu() {
-        System.out.println("Выберите пункт меню:");
+        System.out.println("Р’С‹Р±РµСЂРёС‚Рµ РїСѓРЅРєС‚ РјРµРЅСЋ:");
         System.out.println("1. " + menuItem1);
         System.out.println("2. " + menuItem2);
         System.out.println("3. " + menuItem3);
@@ -37,7 +37,7 @@ public class App {
         System.out.println("5. " + menuItem5);
         System.out.println("6. " + menuItem6);
         System.out.println("7. " + menuItem7);
-        System.out.println("Выход - любое другое число");
+        System.out.println("Р’С‹С…РѕРґ - Р»СЋР±РѕРµ РґСЂСѓРіРѕРµ С‡РёСЃР»Рѕ");
         printSeparateLine();
     }
 
@@ -52,7 +52,7 @@ public class App {
                 choise = Integer.parseInt(s);
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Введено не число, повторите ввод");
+                System.out.println("Р’РІРµРґРµРЅРѕ РЅРµ С‡РёСЃР»Рѕ, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
             }
         }
         return choise;
@@ -64,8 +64,8 @@ public class App {
         while (true) {
             choise = getUserChoice();
             if (choise <= 0) {
-                System.out.println("Введенное значение должно быть больше 0");
-                System.out.println("Повторите ввод данных.");
+                System.out.println("Р’РІРµРґРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 0");
+                System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ РґР°РЅРЅС‹С….");
                 continue;
             }
             break;
@@ -103,7 +103,7 @@ public class App {
     }
 
     private static Circle getCircleData() {
-        System.out.println("Введите радиус \'R\'");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЂР°РґРёСѓСЃ \'R\'");
         return new Circle(getUserChoicePositiveValue());
     }
 
@@ -112,39 +112,39 @@ public class App {
         int r;
 
         while (true) {
-            System.out.println("Введите внешний радиус \'R\'");
+            System.out.println("Р’РІРµРґРёС‚Рµ РІРЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ \'R\'");
             R = getUserChoicePositiveValue();
-            System.out.println("Введите внутренний радиус \'r\'");
+            System.out.println("Р’РІРµРґРёС‚Рµ РІРЅСѓС‚СЂРµРЅРЅРёР№ СЂР°РґРёСѓСЃ \'r\'");
             r = getUserChoicePositiveValue();
 
             if (R > r)
                 break;
 
-            System.out.println("Внешний радиус \'R\' должен быть больше внутреннего радиуса \'r\'.");
-            System.out.println("Повторите ввод данных.");
+            System.out.println("Р’РЅРµС€РЅРёР№ СЂР°РґРёСѓСЃ \'R\' РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ РІРЅСѓС‚СЂРµРЅРЅРµРіРѕ СЂР°РґРёСѓСЃР° \'r\'.");
+            System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ РґР°РЅРЅС‹С….");
         }
 
         return new Annulus(R, r);
     }
 
     private static Triangle getTriangleData() {
-        System.out.println("Введите сторону \'a\'");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ \'a\'");
         int a = getUserChoicePositiveValue();
 
-        System.out.println("Введите сторону \'b\'");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ \'b\'");
         int b = getUserChoicePositiveValue();
 
-        System.out.println("Введите сторону \'c\'");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ \'c\'");
         int c = getUserChoicePositiveValue();
 
         return new Triangle(a, b, c);
     }
 
     private static Rectangle getRectangleData() {
-        System.out.println("Введите сторону \'a\'");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ \'a\'");
         int a = getUserChoicePositiveValue();
 
-        System.out.println("Введите сторону \'b\'");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ \'b\'");
         int b = getUserChoicePositiveValue();
 
         return new Rectangle(a, b);

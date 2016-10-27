@@ -5,10 +5,10 @@ package hometasks.algorithms.task1;
  */
 public class App {
     public static void main(String[] args) {
-        String values2 = "Значения, кратные 2:";
-        String values3 = "Значения, кратные 3:";
-        String values5 = "Значения, кратные 5:";
-        String values7 = "Значения, кратные 7:";
+        String values2 = "Р—РЅР°С‡РµРЅРёСЏ, РєСЂР°С‚РЅС‹Рµ 2:";
+        String values3 = "Р—РЅР°С‡РµРЅРёСЏ, РєСЂР°С‚РЅС‹Рµ 3:";
+        String values5 = "Р—РЅР°С‡РµРЅРёСЏ, РєСЂР°С‚РЅС‹Рµ 5:";
+        String values7 = "Р—РЅР°С‡РµРЅРёСЏ, РєСЂР°С‚РЅС‹Рµ 7:";
         int summ2 = 0;
         int summ3 = 0;
         int summ5 = 0;
@@ -37,7 +37,7 @@ public class App {
         System.out.println(values3);
         System.out.println(values5);
         System.out.println(values7);
-        System.out.println("Разность сумм последовательностей чисел, кратных 7 и 2: " + (summ7 - summ2));
-        System.out.println("Отношение сумм последовательностей чисел, кратных 5 и 3: " + ((float)summ5 / summ3));
+        System.out.println("Р Р°Р·РЅРѕСЃС‚СЊ СЃСѓРјРј РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№ С‡РёСЃРµР», РєСЂР°С‚РЅС‹С… 7 Рё 2: " + (summ7 - summ2));
+        System.out.println("РћС‚РЅРѕС€РµРЅРёРµ СЃСѓРјРј РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№ С‡РёСЃРµР», РєСЂР°С‚РЅС‹С… 5 Рё 3: " + ((float)summ5 / summ3));
     }
 }

@@ -5,6 +5,6 @@ package hometasks.basictypes.task1;
  */
 public class App1 {
     public static void main(String[] args) {
-        System.out.println("Здравствуй мир");
+        System.out.println("Р—РґСЂР°РІСЃС‚РІСѓР№ РјРёСЂ");
     }
 }

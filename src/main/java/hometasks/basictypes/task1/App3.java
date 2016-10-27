@@ -5,21 +5,21 @@ package hometasks.basictypes.task1;
  */
 public class App3 {
     public static void main(String[] args) {
-        String surname = "Смелый";
-        String name = "Андрей";
-        String patronymic = "Анатольевич";
+        String surname = "РЎРјРµР»С‹Р№";
+        String name = "РђРЅРґСЂРµР№";
+        String patronymic = "РђРЅР°С‚РѕР»СЊРµРІРёС‡";
 
         String groupPrefix = "jv";
         int groupNum = 1610;
 
-        String day1 = "Среда";
+        String day1 = "РЎСЂРµРґР°";
         String time1 = "19:00";
 
-        String day2 = "Воскресенье";
+        String day2 = "Р’РѕСЃРєСЂРµСЃРµРЅСЊРµ";
         String time2 = "9:00";
 
-        System.out.println("ФИО: " + surname + " " + name + " " + patronymic);
-        System.out.println("номер группы: " + groupPrefix + groupNum);
-        System.out.println("время занятий: " + day1 + "(" + time1 + "), " + day2 + "(" + time2 + ")");
+        System.out.println("Р¤РРћ: " + surname + " " + name + " " + patronymic);
+        System.out.println("РЅРѕРјРµСЂ РіСЂСѓРїРїС‹: " + groupPrefix + groupNum);
+        System.out.println("РІСЂРµРјСЏ Р·Р°РЅСЏС‚РёР№: " + day1 + "(" + time1 + "), " + day2 + "(" + time2 + ")");
     }
 }

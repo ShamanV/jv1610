@@ -17,26 +17,26 @@ public class App {
             }
         }
 
-        System.out.println("Массив: ");
+        System.out.println("РњР°СЃСЃРёРІ: ");
         printArray(array);
 
         delt = 8;
-        System.out.println("Массив со сдвигом на " + colCount + " позиций влево: ");
+        System.out.println("РњР°СЃСЃРёРІ СЃРѕ СЃРґРІРёРіРѕРј РЅР° " + colCount + " РїРѕР·РёС†РёР№ РІР»РµРІРѕ: ");
         moveArrLeft(array, delt);
         printArray(array);
 
         delt = 9;
-        System.out.println("Массив со сдвигом на " + colCount + " позиций вправо: ");
+        System.out.println("РњР°СЃСЃРёРІ СЃРѕ СЃРґРІРёРіРѕРј РЅР° " + colCount + " РїРѕР·РёС†РёР№ РІРїСЂР°РІРѕ: ");
         moveArrRight(array, delt);
         printArray(array);
 
         delt = 2;
-        System.out.println("Массив со сдвигом на " + colCount + " позиций вверх: ");
+        System.out.println("РњР°СЃСЃРёРІ СЃРѕ СЃРґРІРёРіРѕРј РЅР° " + colCount + " РїРѕР·РёС†РёР№ РІРІРµСЂС…: ");
         moveArrUp(array, delt);
         printArray(array);
 
         delt = 1;
-        System.out.println("Массив со сдвигом на " + colCount + " позиций вниз: ");
+        System.out.println("РњР°СЃСЃРёРІ СЃРѕ СЃРґРІРёРіРѕРј РЅР° " + colCount + " РїРѕР·РёС†РёР№ РІРЅРёР·: ");
         moveArrDown(array, delt);
         printArray(array);
 
