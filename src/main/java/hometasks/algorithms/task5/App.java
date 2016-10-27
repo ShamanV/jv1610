@@ -15,16 +15,16 @@ public class App {
             }
         }
 
-        System.out.println("Массив: ");
+        System.out.println("РњР°СЃСЃРёРІ: ");
         printArray(array);
-        System.out.println("Массив в обратном порядке: ");
+        System.out.println("РњР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ: ");
         printArrayInvert(array);
-        System.out.println("Нечетные элементы массива для каждого нечетного столбца: ");
+        System.out.println("РќРµС‡РµС‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР° РґР»СЏ РєР°Р¶РґРѕРіРѕ РЅРµС‡РµС‚РЅРѕРіРѕ СЃС‚РѕР»Р±С†Р°: ");
         printArrayElemOdd(array);
         System.out.println();
-        System.out.println("Сумма элементов, кратных 7 в четных столбцах: " + printSummElemSevenInEvenCol(array));
+        System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ, РєСЂР°С‚РЅС‹С… 7 РІ С‡РµС‚РЅС‹С… СЃС‚РѕР»Р±С†Р°С…: " + printSummElemSevenInEvenCol(array));
         System.out.println();
-        System.out.println("Произведение элементов, кратных 3 в нечетных столбцах: " + printMultElemThreeInOddCol(array));
+        System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ, РєСЂР°С‚РЅС‹С… 3 РІ РЅРµС‡РµС‚РЅС‹С… СЃС‚РѕР»Р±С†Р°С…: " + printMultElemThreeInOddCol(array));
 
 
     }

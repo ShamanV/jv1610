@@ -11,16 +11,16 @@ public class App {
             mass[i] = (int) (Math.random() * 9 + 1);
         }
 
-        System.out.println("Массив: ");
+        System.out.println("РњР°СЃСЃРёРІ: ");
         printArray(mass);
-        System.out.println("Массив в обратном порядке: ");
+        System.out.println("РњР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ: ");
         printArrayInvert(mass);
-        System.out.println("Четные элементы массива: ");
+        System.out.println("Р§РµС‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°: ");
         printArrayElemEven(mass);
-        System.out.println("Нечетные элементы массива: ");
+        System.out.println("РќРµС‡РµС‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°: ");
         printArrayElemOdd(mass);
-        System.out.println("Сумма элементов, кратных 7: " + printSummElemSeven(mass));
-        System.out.println("Произведение элементов, кратных 3: " + printMultElemThree(mass));
+        System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ, РєСЂР°С‚РЅС‹С… 7: " + printSummElemSeven(mass));
+        System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ, РєСЂР°С‚РЅС‹С… 3: " + printMultElemThree(mass));
     }
 
     private static void printArray(int[] mass) {
