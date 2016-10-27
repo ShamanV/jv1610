@@ -122,7 +122,7 @@ public class App {
                 break;
             case 19:
                 System.out.println("девятнадцать");
-                break;
+                break; 
         }
     }
 }
