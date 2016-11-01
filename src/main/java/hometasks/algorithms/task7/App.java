@@ -1,5 +1,7 @@
 package hometasks.algorithms.task7;
 
+import java.util.Arrays;
+
 /**
  * Created by Dinara&Shaman on 10/21/2016.
  */
@@ -21,25 +23,24 @@ public class App {
         printArray(array);
 
         delt = 8;
-        System.out.println("Массив со сдвигом на " + colCount + " позиций влево: ");
-        moveArrLeft(array, delt);
+        System.out.println("Массив со сдвигом на " + delt + " позиций влево: ");
+        array = moveArrLeft(array, delt);
         printArray(array);
 
         delt = 9;
-        System.out.println("Массив со сдвигом на " + colCount + " позиций вправо: ");
-        moveArrRight(array, delt);
+        System.out.println("Массив со сдвигом на " + delt + " позиций вправо: ");
+        array = moveArrRight(array, delt);
         printArray(array);
 
         delt = 2;
-        System.out.println("Массив со сдвигом на " + colCount + " позиций вверх: ");
-        moveArrUp(array, delt);
+        System.out.println("Массив со сдвигом на " + delt + " позиций вверх: ");
+        array = moveArrUp(array, delt);
         printArray(array);
 
-        delt = 1;
-        System.out.println("Массив со сдвигом на " + colCount + " позиций вниз: ");
-        moveArrDown(array, delt);
+        delt = 6;
+        System.out.println("Массив со сдвигом на " + delt + " позиций вниз: ");
+        array = moveArrDown(array, delt);
         printArray(array);
-
     }
 
     private static void printArray(int[][] array) {
@@ -52,59 +53,37 @@ public class App {
         System.out.println();
     }
 
-    private static void moveArrLeft(int[][] array, int delt) {
-        if(delt > colCount)
-            delt = delt% colCount;
+    private static int[][] moveArrLeft(int[][] array, int delt) {
+        delt %= colCount;
 
-        int temp;
-        for (int i = 0; i < delt; i++) {
+        if (delt != 0) {
             for (int row = 0; row < array.length; row++) {
-                temp = array[row][0];
-                for (int col = 0; col < array[row].length - 1; col++)
-                    array[row][col] = array[row][col + 1];
-                array[row][array[row].length - 1] = temp;
+                int[] tempArray = Arrays.copyOfRange(array[row], 0, delt);
+                System.arraycopy(array[row], delt, array[row], 0, colCount - delt);
+                System.arraycopy(tempArray, 0, array[row], colCount - delt, tempArray.length);
             }
         }
+
+        return array;
     }
 
-    private static void moveArrRight(int[][] array, int delt) {
-        if(delt > colCount)
-            delt = delt% colCount;
-
-        int temp;
-        for (int i = 0; i < delt; i++) {
-            for (int row = 0; row < array.length; row++) {
-                temp = array[row][array[row].length - 1];
-                for (int col = array[row].length - 1; col > 0; col--)
-                    array[row][col] = array[row][col - 1];
-                array[row][0] = temp;
-            }
-        }
+    private static int[][] moveArrRight(int[][] array, int delt) {
+        array = moveArrLeft(array, colCount - delt % colCount);
+        return array;
     }
 
-    private static void moveArrUp(int[][] array, int delt) {
-        if(delt > rowCount)
-            delt = delt% rowCount;
+    private static int[][] moveArrUp(int[][] array, int delt) {
+        delt %= rowCount;
 
-        int[] temp;
-        for (int i = 0; i < delt; i++) {
-            temp = array[0];
-            for (int row = 0; row < array.length - 1; row++)
-                array[row] = array[row + 1];
-            array[array.length - 1] = temp;
-        }
+        int[][] tempArray = Arrays.copyOfRange(array, 0, delt);
+        System.arraycopy(array, delt, array, 0, rowCount - delt);
+        System.arraycopy(tempArray, 0, array, rowCount - delt, tempArray.length);
+
+        return array;
     }
 
-    private static void moveArrDown(int[][] array, int delt) {
-        if(delt > rowCount)
-            delt = delt% rowCount;
-
-        int[] temp;
-        for (int i = 0; i < delt; i++) {
-            temp = array[array.length - 1];
-            for (int row = array.length - 1; row > 0; row--)
-                array[row] = array[row - 1];
-            array[0] = temp;
-        }
+    private static int[][] moveArrDown(int[][] array, int delt) {
+        array = moveArrUp(array, rowCount - delt % rowCount);
+        return array;
     }
 }
